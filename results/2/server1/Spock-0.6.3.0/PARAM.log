@@ -1,0 +1,101 @@
+Benchmarking PARAM
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.74ms    1.21ms  26.16ms   84.67%
+    Req/Sec     8.03k   664.24    13.00k    81.94%
+  470411 requests in 30.00s, 91.07MB read
+Requests/sec:  15680.51
+Transfer/sec:      3.04MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.56ms    1.52ms  26.08ms   85.55%
+    Req/Sec     8.38k     1.68k   20.14k    92.15%
+  494058 requests in 30.00s, 95.65MB read
+Requests/sec:  16468.53
+Transfer/sec:      3.19MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    11.73ms    2.88ms  27.52ms   78.55%
+    Req/Sec     9.62k     3.74k   24.71k    84.08%
+  562343 requests in 30.00s, 108.87MB read
+Requests/sec:  18745.00
+Transfer/sec:      3.63MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.33ms    2.08ms  26.72ms   84.45%
+    Req/Sec     8.73k     2.53k   21.87k    92.79%
+  514167 requests in 30.00s, 99.54MB read
+Requests/sec:  17138.92
+Transfer/sec:      3.32MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.38ms    2.07ms  28.93ms   85.32%
+    Req/Sec     8.68k     2.45k   21.60k    92.89%
+  511811 requests in 30.00s, 99.08MB read
+Requests/sec:  17060.42
+Transfer/sec:      3.30MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.71ms    1.20ms  24.34ms   85.13%
+    Req/Sec     8.10k     0.88k   24.25k    86.73%
+  483328 requests in 30.00s, 93.57MB read
+Requests/sec:  16110.90
+Transfer/sec:      3.12MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.51ms    1.75ms  25.81ms   85.13%
+    Req/Sec     8.45k     2.00k   21.44k    93.21%
+  499250 requests in 30.00s, 96.65MB read
+Requests/sec:  16641.58
+Transfer/sec:      3.22MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.71ms    1.09ms  23.65ms   85.44%
+    Req/Sec     8.04k   600.25    12.00k    82.58%
+  475571 requests in 30.00s, 92.07MB read
+Requests/sec:  15852.62
+Transfer/sec:      3.07MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    12.44ms    2.02ms  25.81ms   86.28%
+    Req/Sec     8.55k     2.22k   21.53k    93.04%
+  506271 requests in 30.00s, 98.01MB read
+Requests/sec:  16875.67
+Transfer/sec:      3.27MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    11.97ms    2.58ms  24.76ms   80.44%
+    Req/Sec     9.22k     3.24k   21.24k    87.67%
+  544485 requests in 30.00s, 105.41MB read
+Requests/sec:  18149.53
+Transfer/sec:      3.51MB
+=================== summary ===================
+machine:      server1
+ghc version:  7.8.2
+bench target: Spock-0.6.3.0
+bench:        PARAM
+bench mode:   30s * 10
+average:      16872.37
+stdev:        971.88
+=================== oneline ===================
+server1,7.8.2,Spock-0.6.3.0,PARAM,30s,10,16872.37,971.88

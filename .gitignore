@@ -1,7 +1,7 @@
 .cabal-sandbox
-Spock-*
-apiary-*
-scotty-*
+/Spock-*
+/apiary-*
+/scotty-*
 cabal.sandbox.config
 dist
 wrk

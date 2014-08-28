@@ -1,0 +1,101 @@
+Benchmarking PARAM
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.14ms    1.23ms  21.41ms   86.80%
+    Req/Sec    10.38k     1.91k   36.07k    90.71%
+  611403 requests in 30.00s, 103.79MB read
+Requests/sec:  20380.28
+Transfer/sec:      3.46MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.93ms    1.71ms  19.27ms   85.25%
+    Req/Sec    10.96k     3.41k   32.42k    93.12%
+  642666 requests in 30.00s, 109.10MB read
+Requests/sec:  21422.23
+Transfer/sec:      3.64MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.23ms    1.12ms  24.97ms   85.96%
+    Req/Sec    10.32k     1.19k   20.60k    80.82%
+  599013 requests in 30.00s, 101.68MB read
+Requests/sec:  19967.04
+Transfer/sec:      3.39MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.63ms    2.24ms  23.65ms   83.26%
+    Req/Sec    11.73k     4.85k   36.83k    89.25%
+  686205 requests in 30.00s, 116.49MB read
+Requests/sec:  22873.64
+Transfer/sec:      3.88MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.25ms    1.01ms  22.91ms   86.18%
+    Req/Sec    10.03k   800.19    16.35k    82.26%
+  590983 requests in 30.00s, 100.32MB read
+Requests/sec:  19699.60
+Transfer/sec:      3.34MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.96ms    1.70ms  23.67ms   85.33%
+    Req/Sec    10.71k     3.08k   28.74k    93.76%
+  631310 requests in 30.00s, 107.17MB read
+Requests/sec:  21043.63
+Transfer/sec:      3.57MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.25ms    1.04ms  24.28ms   85.97%
+    Req/Sec    10.04k   810.89    15.15k    81.93%
+  590864 requests in 30.00s, 100.30MB read
+Requests/sec:  19694.95
+Transfer/sec:      3.34MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.24ms    1.08ms  23.77ms   87.00%
+    Req/Sec    10.09k     0.89k   15.50k    82.28%
+  595245 requests in 30.00s, 101.05MB read
+Requests/sec:  19841.60
+Transfer/sec:      3.37MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.10ms    1.38ms  22.75ms   86.79%
+    Req/Sec    10.70k     2.39k   31.00k    91.47%
+  618402 requests in 30.00s, 104.98MB read
+Requests/sec:  20613.68
+Transfer/sec:      3.50MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.21ms    1.05ms  21.06ms   85.37%
+    Req/Sec    10.09k     0.88k   17.37k    83.37%
+  593588 requests in 30.00s, 100.76MB read
+Requests/sec:  19786.47
+Transfer/sec:      3.36MB
+=================== summary ===================
+machine:      server1
+ghc version:  7.8.2
+bench target: apiary-0.16.0
+bench:        PARAM
+bench mode:   30s * 10
+average:      20532.31
+stdev:        1017.21
+=================== oneline ===================
+server1,7.8.2,apiary-0.16.0,PARAM,30s,10,20532.31,1017.21
