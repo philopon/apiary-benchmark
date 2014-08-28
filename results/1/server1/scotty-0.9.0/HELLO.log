@@ -1,0 +1,101 @@
+Benchmarking HELLO
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.44ms    1.37ms  19.12ms   84.19%
+    Req/Sec    14.25k     2.38k   19.57k    70.02%
+  824059 requests in 30.00s, 133.60MB read
+Requests/sec:  27468.97
+Transfer/sec:      4.45MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.39ms    1.39ms  19.08ms   80.96%
+    Req/Sec    14.38k     2.37k   18.64k    66.39%
+  830426 requests in 30.00s, 134.63MB read
+Requests/sec:  27678.60
+Transfer/sec:      4.49MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.94ms    1.52ms  18.13ms   78.99%
+    Req/Sec    13.35k     2.48k   18.75k    65.66%
+  775209 requests in 30.00s, 125.68MB read
+Requests/sec:  25840.28
+Transfer/sec:      4.19MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     8.04ms    1.48ms  17.18ms   74.19%
+    Req/Sec    13.25k     2.46k   19.50k    65.15%
+  767347 requests in 30.00s, 124.41MB read
+Requests/sec:  25578.29
+Transfer/sec:      4.15MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.82ms    1.44ms  17.19ms   81.56%
+    Req/Sec    13.65k     2.37k   19.85k    69.64%
+  787061 requests in 30.00s, 127.60MB read
+Requests/sec:  26235.83
+Transfer/sec:      4.25MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.69ms    1.46ms  17.96ms   84.72%
+    Req/Sec    13.81k     2.39k   18.28k    66.98%
+  798461 requests in 30.00s, 129.45MB read
+Requests/sec:  26615.07
+Transfer/sec:      4.31MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.87ms    1.54ms  17.31ms   82.09%
+    Req/Sec    13.53k     2.50k   20.07k    66.53%
+  784457 requests in 30.00s, 127.18MB read
+Requests/sec:  26148.77
+Transfer/sec:      4.24MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.17ms    1.17ms  19.88ms   81.80%
+    Req/Sec    14.79k     2.26k   20.57k    71.84%
+  851587 requests in 30.00s, 138.06MB read
+Requests/sec:  28386.42
+Transfer/sec:      4.60MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.83ms    1.50ms  19.55ms   82.43%
+    Req/Sec    13.53k     2.25k   18.19k    66.66%
+  786828 requests in 30.00s, 127.56MB read
+Requests/sec:  26227.89
+Transfer/sec:      4.25MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.54ms    1.47ms  18.84ms   83.71%
+    Req/Sec    14.15k     2.42k   20.08k    69.49%
+  814325 requests in 30.00s, 132.02MB read
+Requests/sec:  27144.44
+Transfer/sec:      4.40MB
+=================== summary ===================
+machine:      server1
+ghc version:  7.8.2
+bench target: scotty-0.9.0
+bench:        HELLO
+bench mode:   30s * 10
+average:      26732.46
+stdev:        902.27
+=================== oneline ===================
+server1,7.8.2,scotty-0.9.0,HELLO,30s,10,26732.46,902.27

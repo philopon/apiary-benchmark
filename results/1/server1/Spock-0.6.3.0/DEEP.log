@@ -1,0 +1,101 @@
+Benchmarking DEEP
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.67ms    1.44ms  20.49ms   85.59%
+    Req/Sec    10.78k     1.37k   14.26k    70.81%
+  628264 requests in 30.00s, 88.68MB read
+Requests/sec:  20942.48
+Transfer/sec:      2.96MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.88ms    1.86ms  20.75ms   81.65%
+    Req/Sec    10.65k     1.86k   14.89k    67.79%
+  622267 requests in 30.00s, 87.83MB read
+Requests/sec:  20741.84
+Transfer/sec:      2.93MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.89ms    1.70ms  21.58ms   82.20%
+    Req/Sec    10.59k     1.54k   14.84k    66.08%
+  618179 requests in 30.00s, 87.25MB read
+Requests/sec:  20606.16
+Transfer/sec:      2.91MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.71ms    1.77ms  21.19ms   83.21%
+    Req/Sec    10.83k     1.75k   15.42k    67.21%
+  632939 requests in 30.00s, 89.34MB read
+Requests/sec:  21098.10
+Transfer/sec:      2.98MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.02ms    1.88ms  20.08ms   81.49%
+    Req/Sec    10.50k     1.80k   14.65k    66.61%
+  614385 requests in 30.00s, 86.72MB read
+Requests/sec:  20479.38
+Transfer/sec:      2.89MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.57ms    1.70ms  21.79ms   84.39%
+    Req/Sec    10.94k     1.61k   14.74k    69.11%
+  638340 requests in 30.00s, 90.10MB read
+Requests/sec:  21278.00
+Transfer/sec:      3.00MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.21ms    2.13ms  25.84ms   77.41%
+    Req/Sec    10.40k     2.02k   16.18k    69.99%
+  606739 requests in 30.00s, 85.64MB read
+Requests/sec:  20224.97
+Transfer/sec:      2.85MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.67ms    1.84ms  23.27ms   76.55%
+    Req/Sec    10.89k     1.83k   16.12k    70.80%
+  634778 requests in 30.00s, 89.59MB read
+Requests/sec:  21159.57
+Transfer/sec:      2.99MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.76ms    1.98ms  29.05ms   77.98%
+    Req/Sec    10.79k     1.83k   15.74k    71.71%
+  629663 requests in 30.00s, 88.87MB read
+Requests/sec:  20988.77
+Transfer/sec:      2.96MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.35ms    1.90ms  23.27ms   74.79%
+    Req/Sec    10.14k     1.68k   15.74k    71.54%
+  592506 requests in 30.00s, 83.63MB read
+Requests/sec:  19750.25
+Transfer/sec:      2.79MB
+=================== summary ===================
+machine:      server1
+ghc version:  7.8.2
+bench target: Spock-0.6.3.0
+bench:        DEEP
+bench mode:   30s * 10
+average:      20726.95
+stdev:        474.41
+=================== oneline ===================
+server1,7.8.2,Spock-0.6.3.0,DEEP,30s,10,20726.95,474.41

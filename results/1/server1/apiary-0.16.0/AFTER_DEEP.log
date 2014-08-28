@@ -1,0 +1,101 @@
+Benchmarking AFTER_DEEP
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.78ms    1.11ms  15.88ms   79.65%
+    Req/Sec    18.67k     3.20k   28.60k    68.05%
+  1064296 requests in 30.00s, 124.84MB read
+Requests/sec:  35476.97
+Transfer/sec:      4.16MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.80ms    1.15ms  14.74ms   80.84%
+    Req/Sec    18.61k     3.20k   28.10k    68.09%
+  1060578 requests in 30.00s, 124.41MB read
+Requests/sec:  35353.08
+Transfer/sec:      4.15MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.81ms    1.10ms  26.69ms   80.75%
+    Req/Sec    18.55k     3.16k   25.50k    67.46%
+  1055628 requests in 30.00s, 123.83MB read
+Requests/sec:  35186.84
+Transfer/sec:      4.13MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.73ms    1.07ms  16.93ms   77.39%
+    Req/Sec    18.62k     2.98k   27.08k    66.07%
+  1068214 requests in 30.00s, 125.30MB read
+Requests/sec:  35606.72
+Transfer/sec:      4.18MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.72ms    1.03ms  19.12ms   77.38%
+    Req/Sec    18.77k     3.12k   27.20k    68.10%
+  1068683 requests in 30.00s, 125.36MB read
+Requests/sec:  35622.75
+Transfer/sec:      4.18MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.76ms    1.07ms  14.36ms   79.89%
+    Req/Sec    18.71k     3.31k   28.20k    69.34%
+  1064528 requests in 30.00s, 124.87MB read
+Requests/sec:  35484.45
+Transfer/sec:      4.16MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.64ms    1.04ms  18.19ms   75.69%
+    Req/Sec    18.98k     3.27k   27.18k    69.14%
+  1085705 requests in 30.00s, 127.36MB read
+Requests/sec:  36190.35
+Transfer/sec:      4.25MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.82ms    1.10ms  13.57ms   78.95%
+    Req/Sec    18.36k     3.14k   24.92k    68.67%
+  1053083 requests in 30.00s, 123.53MB read
+Requests/sec:  35103.13
+Transfer/sec:      4.12MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.76ms    1.10ms  15.58ms   78.99%
+    Req/Sec    18.71k     3.16k   26.10k    68.07%
+  1065456 requests in 30.00s, 124.98MB read
+Requests/sec:  35515.25
+Transfer/sec:      4.17MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.84ms    1.12ms  18.22ms   75.88%
+    Req/Sec    18.48k     3.17k   26.00k    66.76%
+  1051711 requests in 30.00s, 123.37MB read
+Requests/sec:  35057.26
+Transfer/sec:      4.11MB
+=================== summary ===================
+machine:      server1
+ghc version:  7.8.2
+bench target: apiary-0.16.0
+bench:        AFTER_DEEP
+bench mode:   30s * 10
+average:      35459.68
+stdev:        326.76
+=================== oneline ===================
+server1,7.8.2,apiary-0.16.0,AFTER_DEEP,30s,10,35459.68,326.76

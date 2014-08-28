@@ -1,0 +1,7 @@
+.cabal-sandbox
+/Spock-*
+/apiary-*
+/scotty-*
+cabal.sandbox.config
+dist
+wrk

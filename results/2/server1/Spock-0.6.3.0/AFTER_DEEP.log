@@ -1,0 +1,101 @@
+Benchmarking AFTER_DEEP
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.12ms    0.88ms  19.88ms   81.32%
+    Req/Sec    10.13k   741.35    16.18k    79.47%
+  593135 requests in 30.00s, 84.28MB read
+Requests/sec:  19771.09
+Transfer/sec:      2.81MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.80ms    1.63ms  20.43ms   86.95%
+    Req/Sec    11.21k     3.52k   31.20k    93.22%
+  650346 requests in 30.00s, 92.41MB read
+Requests/sec:  21678.19
+Transfer/sec:      3.08MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.12ms    1.00ms  21.87ms   84.86%
+    Req/Sec    10.16k   830.32    15.58k    82.97%
+  597708 requests in 30.00s, 84.93MB read
+Requests/sec:  19923.79
+Transfer/sec:      2.83MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.86ms    1.55ms  20.73ms   87.87%
+    Req/Sec    11.01k     3.25k   30.36k    94.01%
+  643413 requests in 30.00s, 91.43MB read
+Requests/sec:  21447.21
+Transfer/sec:      3.05MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.58ms    1.98ms  21.93ms   84.17%
+    Req/Sec    11.68k     4.40k   33.25k    90.01%
+  683840 requests in 30.00s, 97.17MB read
+Requests/sec:  22794.85
+Transfer/sec:      3.24MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.13ms    1.04ms  24.55ms   85.76%
+    Req/Sec    10.36k     1.15k   20.27k    78.11%
+  606674 requests in 30.00s, 86.21MB read
+Requests/sec:  20222.64
+Transfer/sec:      2.87MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.02ms    1.31ms  22.62ms   88.22%
+    Req/Sec    10.65k     2.54k   35.33k    95.74%
+  625298 requests in 30.00s, 88.85MB read
+Requests/sec:  20843.45
+Transfer/sec:      2.96MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.10ms    1.13ms  24.98ms   86.76%
+    Req/Sec    10.47k     1.81k   31.00k    92.08%
+  613863 requests in 30.00s, 87.23MB read
+Requests/sec:  20462.31
+Transfer/sec:      2.91MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.04ms    1.16ms  21.21ms   87.56%
+    Req/Sec    10.71k     2.15k   31.67k    93.57%
+  619052 requests in 30.00s, 87.97MB read
+Requests/sec:  20635.15
+Transfer/sec:      2.93MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.04ms    1.27ms  22.19ms   87.44%
+    Req/Sec    10.60k     2.30k   38.18k    94.04%
+  620517 requests in 30.00s, 88.17MB read
+Requests/sec:  20684.05
+Transfer/sec:      2.94MB
+=================== summary ===================
+machine:      server1
+ghc version:  7.8.2
+bench target: Spock-0.6.3.0
+bench:        AFTER_DEEP
+bench mode:   30s * 10
+average:      20846.27
+stdev:        910.70
+=================== oneline ===================
+server1,7.8.2,Spock-0.6.3.0,AFTER_DEEP,30s,10,20846.27,910.70
