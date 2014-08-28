@@ -11,6 +11,7 @@ env:
   NBENCH:     iterete par benchmark(default 10)
   PORT:       server port(default: 8080)
 EOD
+exit 1
 else
   NTHREAD=${NTHREAD:-1}
   MACHINE=${MACHINE:-`uname -n`}
