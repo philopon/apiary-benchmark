@@ -1,101 +1,108 @@
 Benchmarking AFTER_DEEP
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
+  2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     8.27ms    1.79ms  26.64ms   81.45%
-    Req/Sec    12.92k     2.55k   20.00k    66.47%
-  749471 requests in 30.00s, 106.50MB read
-Requests/sec:  24982.26
-Transfer/sec:      3.55MB
+    Latency    32.35ms   42.42ms   1.48s    99.88%
+    Req/Sec    12.87k     3.72k   25.18k    68.07%
+  753518 requests in 30.00s, 107.07MB read
+  Socket errors: connect 0, read 0, write 0, timeout 550
+Requests/sec:  25117.37
+Transfer/sec:      3.57MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
+  2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     8.07ms    1.68ms  21.42ms   77.40%
-    Req/Sec    13.27k     2.61k   22.31k    68.85%
-  765900 requests in 30.00s, 108.83MB read
-Requests/sec:  25530.31
-Transfer/sec:      3.63MB
+    Latency    34.50ms   13.49ms 712.62ms   90.89%
+    Req/Sec    12.19k     2.77k   18.96k    64.12%
+  716673 requests in 30.00s, 101.84MB read
+  Socket errors: connect 0, read 0, write 0, timeout 84
+Requests/sec:  23888.96
+Transfer/sec:      3.39MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
+  2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.96ms    1.73ms  31.37ms   75.05%
-    Req/Sec    13.41k     2.58k   19.53k    66.05%
-  777746 requests in 30.00s, 110.52MB read
-Requests/sec:  25924.64
-Transfer/sec:      3.68MB
+    Latency    48.18ms  105.61ms 699.00ms   97.41%
+    Req/Sec    12.97k     4.21k   23.64k    67.49%
+  740226 requests in 30.00s, 105.18MB read
+  Socket errors: connect 0, read 0, write 0, timeout 607
+Requests/sec:  24673.43
+Transfer/sec:      3.51MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
+  2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.64ms    1.50ms  20.07ms   72.84%
-    Req/Sec    13.87k     2.34k   19.80k    68.56%
-  803051 requests in 30.00s, 114.11MB read
-Requests/sec:  26768.57
-Transfer/sec:      3.80MB
------------------------------------------------
-Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.69ms    1.63ms  33.55ms   72.86%
-    Req/Sec    13.86k     2.48k   20.50k    67.77%
-  801299 requests in 30.00s, 113.86MB read
-Requests/sec:  26709.06
-Transfer/sec:      3.80MB
------------------------------------------------
-Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     8.54ms    1.79ms  21.19ms   67.72%
-    Req/Sec    12.52k     2.55k   20.93k    66.79%
-  726022 requests in 30.00s, 103.17MB read
-Requests/sec:  24200.82
-Transfer/sec:      3.44MB
------------------------------------------------
-Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.90ms    1.60ms  31.53ms   79.88%
-    Req/Sec    13.46k     2.43k   19.93k    66.80%
-  780999 requests in 30.00s, 110.98MB read
-Requests/sec:  26033.10
-Transfer/sec:      3.70MB
------------------------------------------------
-Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.84ms    1.54ms  19.93ms   80.12%
-    Req/Sec    13.54k     2.46k   19.87k    66.49%
-  786289 requests in 30.00s, 111.73MB read
-Requests/sec:  26209.93
+    Latency    31.25ms   38.15ms   2.26s    99.93%
+    Req/Sec    13.38k     2.60k   21.35k    77.13%
+  786370 requests in 30.00s, 111.74MB read
+  Socket errors: connect 0, read 0, write 0, timeout 36
+Requests/sec:  26211.93
 Transfer/sec:      3.72MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
+  2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.37ms    1.35ms  20.81ms   79.74%
-    Req/Sec    14.42k     2.31k   21.46k    69.37%
-  831855 requests in 30.00s, 118.20MB read
-Requests/sec:  27728.72
-Transfer/sec:      3.94MB
+    Latency    31.59ms   18.69ms   1.43s    97.03%
+    Req/Sec    13.09k     2.68k   20.26k    67.97%
+  766706 requests in 30.00s, 108.95MB read
+  Socket errors: connect 0, read 0, write 0, timeout 166
+Requests/sec:  25556.06
+Transfer/sec:      3.63MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/after
-  2 threads and 200 connections
+  2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.59ms    1.53ms  18.48ms   77.86%
-    Req/Sec    13.99k     2.45k   19.33k    68.10%
-  810994 requests in 30.00s, 115.24MB read
-Requests/sec:  27033.46
-Transfer/sec:      3.84MB
+    Latency    34.04ms   20.86ms 686.68ms   98.91%
+    Req/Sec    12.48k     3.04k   17.92k    78.96%
+  734485 requests in 30.00s, 104.37MB read
+  Socket errors: connect 0, read 0, write 0, timeout 77
+Requests/sec:  24482.27
+Transfer/sec:      3.48MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.29ms   45.26ms   2.65s    99.94%
+    Req/Sec    13.06k     2.39k   17.68k    71.44%
+  770919 requests in 30.00s, 109.55MB read
+Requests/sec:  25694.68
+Transfer/sec:      3.65MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.44ms   13.12ms 838.32ms   94.96%
+    Req/Sec    13.19k     2.22k   22.47k    71.87%
+  781290 requests in 30.00s, 111.02MB read
+Requests/sec:  26042.66
+Transfer/sec:      3.70MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.32ms   14.34ms   1.16s    89.33%
+    Req/Sec    12.77k     2.75k   20.21k    68.77%
+  750023 requests in 30.00s, 106.58MB read
+  Socket errors: connect 0, read 0, write 0, timeout 226
+Requests/sec:  25000.33
+Transfer/sec:      3.55MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.18ms   12.82ms   1.04s    93.94%
+    Req/Sec    13.29k     2.15k   19.67k    73.94%
+  789495 requests in 30.00s, 112.19MB read
+Requests/sec:  26316.57
+Transfer/sec:      3.74MB
 =================== summary ===================
 machine:      server1
 ghc version:  7.8.2
 bench target: Spock-0.6.3.0
 bench:        AFTER_DEEP
 bench mode:   30s * 10
-average:      26112.09
-stdev:        1031.11
+average:      25298.43
+stdev:        803.70
 =================== oneline ===================
-server1,7.8.2,Spock-0.6.3.0,AFTER_DEEP,30s,10,26112.09,1031.11
+server1,7.8.2,Spock-0.6.3.0,AFTER_DEEP,30s,10,25298.43,803.70

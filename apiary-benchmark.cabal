@@ -24,6 +24,7 @@ executable apiary
   if flag(apiary)
     build-depends:       base >=4.7 && <4.8
                        , apiary >=0.14
+                       , transformers
                        , warp
                        , text
     buildable: True

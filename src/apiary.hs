@@ -3,6 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import System.Environment
+import Data.Functor.Identity
 import Web.Apiary
 import Network.Wai.Handler.Warp
 import qualified Data.Text as T
@@ -19,7 +20,7 @@ import qualified Data.Text.Lazy.Encoding as TL
 main :: IO ()
 main = do
     port:_ <- getArgs
-    run (read port) . runApiary def $ do
+    (run $ read port) . runIdentity . runApiary def $ do
         [capture|/echo/hello-world|] . method GET . action $
 #if MIN_VERSION_apiary(0,15,2)
              bytes "Hello World"

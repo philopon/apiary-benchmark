@@ -69,7 +69,7 @@ fi
 GHCVERSION=`ghc --numeric-version`
 FRAMEWORKVERSION=`cabal sandbox hc-pkg list | grep -v 'conf.d:' | grep $PROG | xargs echo`
 
-WRK="wrk -t2 -c200 -d$BENCHTIME"
+WRK="wrk -t2 -c800 -d$BENCHTIME"
 
 HELLO_URL="http://localhost:$PORT/echo/hello-world"
 PARAM_URL="http://localhost:$PORT/echo/plain/hello/12"
