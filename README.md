@@ -27,7 +27,7 @@ benchmarks
 machines
 ---
 
-### machine1
+### server1
 
 ```.sh
 % uname -a
