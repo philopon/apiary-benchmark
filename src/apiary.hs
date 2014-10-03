@@ -7,36 +7,19 @@ import Web.Apiary
 import Network.Wai.Handler.Warp
 import qualified Data.Text as T
 
-#if MIN_VERSION_apiary(0,15,2)
 import Control.Monad
 #define SIMPLE(r) [capture|/deep/foo/bar/baz/r|] . method GET . action $ bytes "deep"
-#else
-import qualified Data.Text.Lazy as TL
-import qualified Data.Text.Lazy.Encoding as TL
-#define SIMPLE(r) [capture|/deep/foo/bar/baz/r|] . method GET . action $ lbs "deep"
-#endif
 
 main :: IO ()
 main = do
     port:_ <- getArgs
-#if MIN_VERSION_apiary(0,16,0)
     server (run $ read port) . runApiary def $ do
-#else
-    run (read port) . runApiary def $ do
-#endif
         [capture|/echo/hello-world|] . method GET . action $
-#if MIN_VERSION_apiary(0,15,2)
              bytes "Hello World"
-#else
-             lbs "Hello World"
-#endif
 
-        [capture|/echo/plain/:T.Text/:Int|] . method GET . action $ \s i ->
-#if MIN_VERSION_apiary(0,15,2)
+        [capture|/echo/plain/s::T.Text/i::Int|] . method GET . action $ do
+             (s, i) <- [params|s,i|]
              replicateM_ i (text s)
-#else
-             lbs . TL.encodeUtf8 . TL.fromChunks $ replicate i s
-#endif
 
         SIMPLE(0)
         SIMPLE(1)
@@ -141,8 +124,4 @@ main = do
         SIMPLE(100)
 
         [capture|/after|] . method GET . action $
-#if MIN_VERSION_apiary(0,15,2)
             bytes "after"
-#else
-            lbs "after"
-#endif

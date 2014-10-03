@@ -2,7 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import System.Environment
-import Web.Spock
+import Web.Spock.Safe
 import qualified Data.Text.Lazy as TL
 import qualified Data.Text.Lazy.Encoding as TL
 
@@ -10,10 +10,8 @@ main :: IO ()
 main = do
     port:_ <- getArgs
     spockT (read port) id $ do
-        get "/echo/hello-world" $ text "Hello World"
-        get "/echo/plain/:param/:int" $ do
-            Just p <- param "param"
-            Just i <- param "int"
+        get ("echo" </> "hello-world") $ text "Hello World"
+        get ("echo" </> "plain" </> var </> var) $ \p i -> do
             lazyBytes . TL.encodeUtf8 . TL.concat $ replicate i p
 
         subcomponent "/deep/foo/bar/baz" $ do
