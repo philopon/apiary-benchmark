@@ -25,7 +25,7 @@ executable apiary
   main-is:             apiary.hs
   if flag(apiary)
     build-depends:       base >=4.7 && <4.8
-                       , apiary >=0.14
+                       , apiary >=0.18
                        , transformers
                        , warp
                        , text
@@ -40,7 +40,7 @@ executable scotty
   main-is:             scotty.hs
   if flag(scotty)
     build-depends:       base >=4.7 && <4.8
-                       , scotty >=0.8
+                       , scotty >=0.9
                        , text
     buildable: True
   else
@@ -54,7 +54,7 @@ executable Spock
   main-is:             Spock.hs
   if flag(Spock)
     build-depends:       base >=4.7 && <4.8
-                       , Spock >=0.6.3
+                       , Spock >=0.7.0
                        , text
     buildable: True
   else
