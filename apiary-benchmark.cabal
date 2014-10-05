@@ -18,6 +18,8 @@ flag scotty
   default: False
 flag Spock
   default: False
+flag yesod
+  default: False
 
 executable apiary
   main-is:             apiary.hs
@@ -53,6 +55,19 @@ executable Spock
   if flag(Spock)
     build-depends:       base >=4.7 && <4.8
                        , Spock >=0.6.3
+                       , text
+    buildable: True
+  else
+    buildable: False
+  ghc-options:         -Wall -O2 -threaded
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+
+executable yesod
+  main-is:             yesod.hs
+  if flag(yesod)
+    build-depends:       base >=4.7 && <4.8
+                       , yesod-core >= 1.4
                        , text
     buildable: True
   else
