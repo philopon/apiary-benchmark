@@ -2,6 +2,7 @@
 /Spock-*
 /apiary-*
 /scotty-*
+/yesod-core-*
 cabal.sandbox.config
 dist
 wrk

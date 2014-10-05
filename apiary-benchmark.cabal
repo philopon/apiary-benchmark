@@ -18,7 +18,7 @@ flag scotty
   default: False
 flag Spock
   default: False
-flag yesod
+flag yesod-core
   default: False
 
 executable apiary
@@ -63,11 +63,13 @@ executable Spock
   hs-source-dirs:      src
   default-language:    Haskell2010
 
-executable yesod
+executable yesod-core
   main-is:             yesod.hs
-  if flag(yesod)
+  if flag(yesod-core)
     build-depends:       base >=4.7 && <4.8
                        , yesod-core >= 1.4
+                       , warp
+                       , transformers
                        , text
     buildable: True
   else
