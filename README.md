@@ -7,6 +7,7 @@ libraries
 * apiary
 * scotty
 * Spock
+* yesod LiteApp
 
 how to run
 ---
