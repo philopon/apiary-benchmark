@@ -13,7 +13,7 @@ import Control.Monad
 main :: IO ()
 main = do
     port:_ <- getArgs
-    server (run $ read port) . runApiary def $ do
+    runApiary (run $ read port) def $ do
         [capture|/echo/hello-world|] . method GET . action $
              bytes "Hello World"
 

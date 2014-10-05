@@ -13,9 +13,9 @@ how to run
 ```.sh
 cabal update
 cabal sandbox init
-cabal get apiary-0.18.0 Spock-0.7.0.0 scotty-0.9.0
-cabal install ./apiary-0.18.0 ./Spock-0.7.0.0 ./scotty-0.9.0
-./scripts/all.sh apiary-0.18.0 Spock-0.7.0.0 scotty-0.9.0
+cabal get apiary-1.0.0 Spock-0.7.0.0 scotty-0.9.0 yesod-core-1.4.1.1
+cabal install ./apiary-1.0.0 ./Spock-0.7.0.0 ./scotty-0.9.0 ./yesod-core-1.4.1.1
+./scripts/all.sh apiary-1.0.0 Spock-0.7.0.0 scotty-0.9.0 yesod-core-1.4.1.1
 ```
 
 benchmarks
@@ -49,11 +49,12 @@ results
 
 ![result](./results/1/result-server1.png)
 
-|machine  |ghc    |framework    |HELLO   |PARAM   |DEEP    |AFTER_DEEP|
-|---------|-------|-------------|--------|--------|--------|----------|
-|server1  |7.8.3  |apiary-0.18.0|35142.22|28986.17|32288.07|37477.12  |
-|server1  |7.8.3  |Spock-0.7.0.0|27520.06|24105.22|26100.14|28832.08  |
-|server1  |7.8.3  |scotty-0.9.0 |28354.12|16341.25|2597.80 |9322.60   |
+|machine  |ghc    |framework         |HELLO   |PARAM   |DEEP    |AFTER_DEEP|
+|---------|-------|------------------|--------|--------|--------|----------|
+|server1  |7.8.3  |apiary-1.0.0      |34772.94|28262.47|32265.11|37005.55  |
+|server1  |7.8.3  |Spock-0.7.0.0     |27520.06|24105.22|26100.14|28832.08  |
+|server1  |7.8.3  |scotty-0.9.0      |28354.12|16341.25|2597.80 |9322.60   |
+|server1  |7.8.3  |yesod-core-1.4.1.1|5541.77 |5322.95 |5213.03 |5675.90   |
 
 references
 ---

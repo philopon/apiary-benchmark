@@ -26,8 +26,8 @@ mkdir -p results/$NTHREAD
 ghc-pkg list --package-db=`find .cabal-sandbox -type d -name \*.conf.d` > results/$NTHREAD/pkg.txt
 
 for PKG in $@; do
-  FRAMEWORK=`echo $PKG | awk -F'-' '{print $1}'`
-  VERSION=`echo $PKG | awk -F'-' '{print $2}'`
+  FRAMEWORK=${PKG%-*}
+  VERSION=${PKG##*-}
 
   cabal sandbox hc-pkg unregister $FRAMEWORK
   [ -e ./$PKG ] || cabal get $PKG
