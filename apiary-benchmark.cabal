@@ -72,6 +72,7 @@ executable yesod-core
                        , warp
                        , transformers
                        , text
+                       , bytestring
     buildable: True
   else
     buildable: False
