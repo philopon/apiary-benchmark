@@ -15,7 +15,7 @@ main = do
     port:_ <- getArgs
     runApiary (run $ read port) def $ do
         [capture|/echo/hello-world|] . method GET . action $
-             bytes "Hello World"
+             text "Hello World"
 
         [capture|/echo/plain/s::T.Text/i::Int|] . method GET . action $ do
              (s, i) <- [params|s,i|]
@@ -124,4 +124,4 @@ main = do
         SIMPLE(100)
 
         [capture|/after|] . method GET . action $
-            bytes "after"
+            text "after"
