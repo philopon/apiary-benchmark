@@ -5,7 +5,7 @@
 import System.Environment
 import Web.Apiary
 import Network.Wai.Handler.Warp
-import qualified Data.Text as T
+import qualified Data.ByteString as S
 
 import Control.Monad
 #define SIMPLE(r) [capture|/deep/foo/bar/baz/r|] . method GET . action $ bytes "deep"
@@ -15,11 +15,11 @@ main = do
     port:_ <- getArgs
     runApiary (run $ read port) def $ do
         [capture|/echo/hello-world|] . method GET . action $
-             text "Hello World"
+             bytes "Hello World"
 
-        [capture|/echo/plain/s::T.Text/i::Int|] . method GET . action $ do
+        [capture|/echo/plain/s::S.ByteString/i::Int|] . method GET . action $ do
              (s, i) <- [params|s,i|]
-             replicateM_ i (text s)
+             replicateM_ i (bytes s)
 
         SIMPLE(0)
         SIMPLE(1)
@@ -124,4 +124,4 @@ main = do
         SIMPLE(100)
 
         [capture|/after|] . method GET . action $
-            text "after"
+            bytes "after"

@@ -3,18 +3,18 @@
 
 import System.Environment
 import Web.Spock.Safe
-import qualified Data.Text.Lazy as TL
-import qualified Data.Text.Lazy.Encoding as TL
+import qualified Data.Text.Encoding as T
+import qualified Data.ByteString.Lazy as L
 
-#define SIMPLE(r) get ("deep" </> "foo" </> "bar" </> "baz" </> r) $ text "deep"
+#define SIMPLE(r) get ("deep" </> "foo" </> "bar" </> "baz" </> r) $ bytes "deep"
 
 main :: IO ()
 main = do
     port:_ <- getArgs
     spockT (read port) id $ do
-        get ("echo" </> "hello-world") $ text "Hello World"
+        get ("echo" </> "hello-world") $ bytes "Hello World"
         get ("echo" </> "plain" </> var </> var) $ \p i -> do
-            lazyBytes . TL.encodeUtf8 . TL.concat $ replicate i p
+            lazyBytes . L.fromChunks $ replicate i (T.encodeUtf8 p)
 
         SIMPLE("0")
         SIMPLE("1")
@@ -118,4 +118,4 @@ main = do
         SIMPLE("99")
         SIMPLE("100")
 
-        get "after" $ text "after"
+        get "after" $ bytes "after"

@@ -28,7 +28,7 @@ executable apiary
                        , apiary >=0.18
                        , transformers
                        , warp
-                       , text
+                       , bytestring
     buildable: True
   else
     buildable: False
@@ -41,7 +41,7 @@ executable scotty
   if flag(scotty)
     build-depends:       base >=4.7 && <4.8
                        , scotty >=0.9
-                       , text
+                       , bytestring
     buildable: True
   else
     buildable: False
@@ -56,6 +56,7 @@ executable Spock
     build-depends:       base >=4.7 && <4.8
                        , Spock >=0.7.0
                        , text
+                       , bytestring
     buildable: True
   else
     buildable: False
