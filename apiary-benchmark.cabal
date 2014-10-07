@@ -41,6 +41,7 @@ executable scotty
   if flag(scotty)
     build-depends:       base >=4.7 && <4.8
                        , scotty >=0.9
+                       , warp
                        , bytestring
     buildable: True
   else
@@ -55,6 +56,7 @@ executable Spock
   if flag(Spock)
     build-depends:       base >=4.7 && <4.8
                        , Spock >=0.7.0
+                       , warp
                        , text
                        , bytestring
     buildable: True
