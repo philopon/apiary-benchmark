@@ -4,10 +4,10 @@ benchmark result of haskell lightweight web frameworks.
 
 libraries
 ---
-* apiary
-* scotty
-* Spock
-* yesod LiteApp
+* [apiary](src/apiary.hs)
+* [scotty](src/scotty.hs)
+* [Spock](src/Spock.hs)
+* [yesod](yesod.hs)
 
 how to run
 ---
