@@ -1,15 +1,15 @@
-benchmark
+apiary-benchmark
 ===
 benchmark result of haskell lightweight web frameworks.
 
-libraries
+Frameworks
 ---
 * [apiary](src/apiary.hs)
 * [scotty](src/scotty.hs)
 * [Spock](src/Spock.hs)
 * [yesod](yesod.hs)
 
-how to run
+How to run
 ---
 ```.sh
 cabal update
@@ -19,14 +19,14 @@ cabal install ./apiary-1.0.0 ./Spock-0.7.0.0 ./scotty-0.9.0 ./yesod-core-1.4.1.1
 ./scripts/all.sh apiary-1.0.0 Spock-0.7.0.0 scotty-0.9.0 yesod-core-1.4.1.1
 ```
 
-benchmarks
+Benchmarks
 ---
 1. HELLO (no capture)
 2. PARAM (capture route parameter)
 3. DEEP  (deep and many routes)
 3. AFTER_DEEP (after DEEP route)
 
-machines
+Machines
 ---
 
 ### server1
@@ -43,7 +43,7 @@ model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
 MemTotal:       16354960 kB
 ```
 
-results
+Results
 ---
 
 ### single thread
@@ -57,6 +57,6 @@ results
 |server1  |7.8.3  |Spock-0.7.0.0   |27958.11|24654.56|27412.06|29720.23  |
 |server1  |7.8.3  |scotty-0.9.0    |28793.40|17655.79|2633.15 |9480.64   |
 
-references
+References
 ---
 1. [agrafix/Spock-scotty-benchmark](https://github.com/agrafix/Spock-scotty-benchmark)
