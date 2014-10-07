@@ -7,7 +7,7 @@ Frameworks
 * [apiary](src/apiary.hs)
 * [scotty](src/scotty.hs)
 * [Spock](src/Spock.hs)
-* [yesod](yesod.hs)
+* [yesod](src/yesod.hs)
 
 How to run
 ---
