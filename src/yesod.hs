@@ -5,6 +5,13 @@ import Data.Text (Text)
 import qualified Data.Text.Lazy as TL
 import System.Environment (getArgs)
 import Network.Wai.Handler.Warp (run)
+import Control.Monad.Trans.Resource (InternalState)
+import System.IO.Unsafe (unsafePerformIO)
+import Data.IORef (newIORef)
+
+fakeInternalState :: InternalState
+fakeInternalState = unsafePerformIO $ newIORef $ error "fakeInternalState forced"
+{-# NOINLINE fakeInternalState #-}
 
 data App = App
 instance Yesod App where
@@ -15,6 +22,10 @@ instance Yesod App where
     {-# INLINE yesodMiddleware #-}
     cleanPath _ = Right
     {-# INLINE cleanPath #-}
+    yesodWithInternalState _ _ = ($ fakeInternalState)
+    {-# INLINE yesodWithInternalState #-}
+    maximumContentLength _ _ = Nothing
+    {-# INLINE maximumContentLength #-}
 
 mkYesod "App" [parseRoutes|
 /echo EchoR:

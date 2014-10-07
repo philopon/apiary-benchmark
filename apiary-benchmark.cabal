@@ -68,11 +68,12 @@ executable yesod-core
   main-is:             yesod.hs
   if flag(yesod-core)
     build-depends:       base >=4.7 && <4.8
-                       , yesod-core >= 1.4
+                       , yesod-core >= 1.4.2
                        , warp
                        , transformers
                        , text
                        , bytestring
+                       , resourcet
     buildable: True
   else
     buildable: False
