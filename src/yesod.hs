@@ -6,6 +6,7 @@ import Data.Text (Text)
 import System.Environment (getArgs)
 import Network.Wai
 import Network.Wai.Handler.Warp (run)
+import Control.Concurrent (runInUnboundThread)
 import Control.Monad.Trans.Resource (InternalState)
 import System.IO.Unsafe (unsafePerformIO)
 import Data.IORef (newIORef)
@@ -271,4 +272,4 @@ main :: IO ()
 main = do
     port:_ <- getArgs
     app <- toWaiAppPlain App
-    run (read port) app
+    runInUnboundThread $ run (read port) app
