@@ -74,6 +74,9 @@ executable yesod-core
                        , text
                        , bytestring
                        , resourcet
+                       , wai
+                       , http-types
+                       , blaze-builder
     buildable: True
   else
     buildable: False

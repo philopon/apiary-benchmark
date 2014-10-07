@@ -1,13 +1,18 @@
 {-# LANGUAGE OverloadedStrings, TemplateHaskell, QuasiQuotes, TypeFamilies, ViewPatterns #-}
+module Main (main, Widget, resourcesApp) where
 import Yesod.Core
 import Data.ByteString (ByteString)
 import Data.Text (Text)
-import qualified Data.Text.Lazy as TL
 import System.Environment (getArgs)
+import Network.Wai
 import Network.Wai.Handler.Warp (run)
 import Control.Monad.Trans.Resource (InternalState)
 import System.IO.Unsafe (unsafePerformIO)
 import Data.IORef (newIORef)
+import Network.HTTP.Types (status200)
+import Blaze.ByteString.Builder (fromByteString)
+import Blaze.ByteString.Builder.Char.Utf8 (fromText)
+import Data.Monoid (mempty, mappend)
 
 fakeInternalState :: InternalState
 fakeInternalState = unsafePerformIO $ newIORef $ error "fakeInternalState forced"
@@ -137,7 +142,9 @@ mkYesod "App" [parseRoutes|
 |]
 
 returnBS :: ByteString -> Handler TypedContent
-returnBS bs = return $ TypedContent "text/plain" $ toContent bs
+returnBS = sendWaiResponse
+         . responseBuilder status200 [("Content-Type", "text/plain")]
+         . fromByteString
 
 handleNum0R :: Handler TypedContent; handleNum0R = returnBS "deep"
 handleNum1R :: Handler TypedContent; handleNum1R = returnBS "deep"
@@ -244,11 +251,21 @@ handleNum100R :: Handler TypedContent; handleNum100R = returnBS "deep"
 handleHelloWorldR :: Handler TypedContent
 handleHelloWorldR = returnBS "Hello World"
 
-handlePlainR :: Text -> Int -> Handler TL.Text
-handlePlainR p i = return $ TL.fromChunks $ replicate i p
-
 handleAfterR :: Handler TypedContent
 handleAfterR = returnBS "after"
+
+handlePlainR :: Text -> Int -> Handler ()
+handlePlainR p i =
+    sendWaiResponse
+  $ responseBuilder status200 [("Content-Type", "text/plain")] builder
+  where
+    p' = fromText p
+    builder =
+        loop i
+      where
+        loop 0 = mempty
+        loop 1 = p'
+        loop x = p' `mappend` loop (x - 1)
 
 main :: IO ()
 main = do
