@@ -5,15 +5,20 @@ import System.Environment
 import Web.Spock.Safe
 import qualified Data.Text.Encoding as T
 import qualified Data.ByteString.Lazy as L
+import Network.Wai.Handler.Warp (run)
+import Control.Concurrent (runInUnboundThread)
 
-#define SIMPLE(r) get ("deep" </> "foo" </> "bar" </> "baz" </> r) $ bytes "deep"
+#define SIMPLE(r) get ("deep" </> "foo" </> "bar" </> "baz" </> r) $ setHeader "Content-Type" "text/plain" >> bytes "deep"
 
 main :: IO ()
 main = do
     port:_ <- getArgs
-    spockT (read port) id $ do
-        get ("echo" </> "hello-world") $ bytes "Hello World"
+    (>>= runInUnboundThread . run (read port)) . spockApp id $ do
+        get ("echo" </> "hello-world") $
+            setHeader "Content-Type" "text/plain" >> bytes "Hello World"
+
         get ("echo" </> "plain" </> var </> var) $ \p i -> do
+            setHeader "Content-Type" "text/plain"
             lazyBytes . L.fromChunks $ replicate i (T.encodeUtf8 p)
 
         SIMPLE("0")
@@ -118,4 +123,6 @@ main = do
         SIMPLE("99")
         SIMPLE("100")
 
-        get "after" $ bytes "after"
+        get "after" $ do
+            setHeader "Content-Type" "text/plain"
+            bytes "after"

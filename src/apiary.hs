@@ -4,21 +4,23 @@
 
 import System.Environment
 import Web.Apiary
-import Network.Wai.Handler.Warp
+import Control.Concurrent (runInUnboundThread)
+import Network.Wai.Handler.Warp (run)
 import qualified Data.ByteString as S
 
 import Control.Monad
-#define SIMPLE(r) [capture|/deep/foo/bar/baz/r|] . method GET . action $ bytes "deep"
+#define SIMPLE(r) [capture|/deep/foo/bar/baz/r|] . method GET . action $ contentType "text/plain" >> bytes "deep"
 
 main :: IO ()
 main = do
     port:_ <- getArgs
-    runApiary (run $ read port) def $ do
+    runApiary (runInUnboundThread . run (read port)) def $ do
         [capture|/echo/hello-world|] . method GET . action $
-             bytes "Hello World"
+             contentType "text/plain" >> bytes "Hello World"
 
         [capture|/echo/plain/s::S.ByteString/i::Int|] . method GET . action $ do
              (s, i) <- [params|s,i|]
+             contentType "text/plain"
              replicateM_ i (bytes s)
 
         SIMPLE(0)
@@ -124,4 +126,4 @@ main = do
         SIMPLE(100)
 
         [capture|/after|] . method GET . action $
-            bytes "after"
+            contentType "text/plain" >> bytes "after"
