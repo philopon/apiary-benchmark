@@ -2,7 +2,6 @@
 
 import System.Environment
 import Web.Scotty
-import qualified Data.ByteString as S
 import qualified Data.ByteString.Lazy as L
 import Network.Wai.Handler.Warp (run)
 import Control.Concurrent (runInUnboundThread)
