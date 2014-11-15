@@ -13,7 +13,7 @@ import Control.Concurrent (runInUnboundThread)
 main :: IO ()
 main = do
     port:_ <- getArgs
-    (>>= runInUnboundThread . run (read port)) . spockApp id $ do
+    (>>= runInUnboundThread . (run (read port))) . spockAsApp . spockT id $ do
         get ("echo" </> "hello-world") $
             setHeader "Content-Type" "text/plain" >> bytes "Hello World"
 

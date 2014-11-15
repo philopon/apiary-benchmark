@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python
 # for f in `ls */*.log`; do tail -n 1 $f; done | python ../../../collect.py > results.dat
 
 import sys

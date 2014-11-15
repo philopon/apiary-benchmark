@@ -1,10 +1,10 @@
 .cabal-sandbox/x86_64-linux-ghc-7.8.3-packages.conf.d:
     HUnit-1.2.5.2
     QuickCheck-2.6
-    Spock-0.7.1.0
+    Spock-0.7.4.0
     aeson-0.8.0.1
     ansi-terminal-0.6.1.1
-    apiary-1.1.0
+    apiary-1.1.1
     async-2.0.1.6
     attoparsec-0.12.1.2
     auto-update-0.1.1.5
@@ -51,6 +51,7 @@
     monad-logger-0.3.7.2
     monad-loops-0.4.2.1
     mtl-2.1.3.1
+    mwc-random-0.13.2.2
     nats-0.2
     network-2.6.0.2
     parsec-3.1.7
@@ -62,6 +63,7 @@
     regex-compat-0.95.1
     regex-posix-0.95.2
     reroute-0.2.0.0
+    reroute-0.2.1.0
     resource-pool-0.2.3.0
     resourcet-1.1.2.3
     safe-0.3.8
@@ -97,6 +99,6 @@
     warp-3.0.2.3
     word8-0.1.1
     xsd-0.4.0.1
-    yesod-core-1.4.2
+    yesod-core-1.4.3.1
     zlib-0.5.4.1
 
