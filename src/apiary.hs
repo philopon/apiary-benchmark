@@ -21,7 +21,7 @@ main = do
         [capture|/echo/plain/s::S.ByteString/i::Int|] . method GET . action $ do
              (s, i) <- [params|s,i|]
              contentType "text/plain"
-             replicateM_ i (bytes s)
+             replicateM_ i (appendBytes s)
 
         SIMPLE(0)
         SIMPLE(1)
