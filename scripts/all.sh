@@ -31,6 +31,7 @@ for PKG in $@; do
 
   cabal sandbox hc-pkg unregister $FRAMEWORK
   [ -e ./$PKG ] || cabal get $PKG
+  cd $PKG && cabal clean && cd ..
   cabal install ./$PKG
   cabal clean
   cabal configure -f$FRAMEWORK
