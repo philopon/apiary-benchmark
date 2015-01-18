@@ -8,16 +8,16 @@ import qualified Data.ByteString.Lazy as L
 import Network.Wai.Handler.Warp (run)
 import Control.Concurrent (runInUnboundThread)
 
-#define SIMPLE(r) get ("deep" </> "foo" </> "bar" </> "baz" </> r) $ setHeader "Content-Type" "text/plain" >> bytes "deep"
+#define SIMPLE(r) get ("deep" <//> "foo" <//> "bar" <//> "baz" <//> r) $ setHeader "Content-Type" "text/plain" >> bytes "deep"
 
 main :: IO ()
 main = do
     port:_ <- getArgs
     (>>= runInUnboundThread . (run (read port))) . spockAsApp . spockT id $ do
-        get ("echo" </> "hello-world") $
+        get ("echo" <//> "hello-world") $
             setHeader "Content-Type" "text/plain" >> bytes "Hello World"
 
-        get ("echo" </> "plain" </> var </> var) $ \p i -> do
+        get ("echo" <//> "plain" <//> var <//> var) $ \p i -> do
             setHeader "Content-Type" "text/plain"
             lazyBytes . L.fromChunks $ replicate i (T.encodeUtf8 p)
 
