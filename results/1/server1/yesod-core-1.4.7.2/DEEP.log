@@ -3,109 +3,108 @@ Benchmarking DEEP
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   188.89ms  384.78ms   1.35s    89.83%
-    Req/Sec     6.39k     3.22k   16.44k    66.53%
-  381331 requests in 30.00s, 53.82MB read
-  Socket errors: connect 0, read 0, write 0, timeout 275
-Requests/sec:  12711.05
-Transfer/sec:      1.79MB
+    Latency    37.83ms   36.51ms 690.31ms   99.41%
+    Req/Sec    10.92k     2.56k   18.53k    77.46%
+  644675 requests in 30.00s, 89.76MB read
+  Socket errors: connect 0, read 0, write 0, timeout 602
+Requests/sec:  21489.10
+Transfer/sec:      2.99MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   504.77ms  707.71ms   1.90s    70.43%
-    Req/Sec     6.11k     4.29k   24.08k    63.40%
-  357734 requests in 30.01s, 50.49MB read
-  Socket errors: connect 0, read 0, write 0, timeout 218
-Requests/sec:  11921.01
-Transfer/sec:      1.68MB
+    Latency   130.88ms  368.51ms   1.75s    92.75%
+    Req/Sec    11.32k     5.31k   30.45k    67.50%
+  652488 requests in 30.00s, 90.85MB read
+  Socket errors: connect 0, read 0, write 0, timeout 755
+Requests/sec:  21749.37
+Transfer/sec:      3.03MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   730.44ms    1.02s    2.30s    70.17%
-    Req/Sec     6.18k     4.12k   19.83k    64.42%
-  358583 requests in 30.00s, 50.61MB read
-  Socket errors: connect 0, read 106, write 0, timeout 107
-Requests/sec:  11952.50
-Transfer/sec:      1.69MB
+    Latency    37.33ms   12.84ms 856.66ms   82.00%
+    Req/Sec    10.87k     2.60k   18.81k    73.68%
+  644286 requests in 30.01s, 89.71MB read
+  Socket errors: connect 0, read 0, write 0, timeout 212
+Requests/sec:  21469.06
+Transfer/sec:      2.99MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   488.46ms  779.56ms   2.20s    75.43%
-    Req/Sec     6.57k     4.24k   20.00k    65.00%
-  383803 requests in 30.00s, 54.17MB read
-  Socket errors: connect 0, read 2, write 0, timeout 106
-Requests/sec:  12793.12
-Transfer/sec:      1.81MB
+    Latency   321.47ms  688.19ms   2.04s    85.40%
+    Req/Sec    11.10k     5.61k   32.56k    66.69%
+  631717 requests in 30.00s, 87.96MB read
+  Socket errors: connect 0, read 11, write 0, timeout 113
+Requests/sec:  21056.67
+Transfer/sec:      2.93MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   777.88ms    1.14s    2.70s    71.50%
-    Req/Sec     6.50k     4.41k   23.75k    65.50%
-  377930 requests in 30.01s, 53.34MB read
-  Socket errors: connect 0, read 10, write 0, timeout 146
-Requests/sec:  12593.41
-Transfer/sec:      1.78MB
+    Latency    39.22ms    9.63ms 108.25ms   86.05%
+    Req/Sec    10.51k     1.82k   14.41k    70.28%
+  627632 requests in 30.00s, 87.39MB read
+Requests/sec:  20920.00
+Transfer/sec:      2.91MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   594.07ms  757.82ms   1.85s    66.62%
-    Req/Sec     6.26k     4.53k   25.45k    66.80%
-  352682 requests in 30.00s, 49.78MB read
-  Socket errors: connect 0, read 0, write 0, timeout 224
-Requests/sec:  11755.70
-Transfer/sec:      1.66MB
+    Latency   107.89ms  238.49ms 972.87ms   91.33%
+    Req/Sec    11.28k     5.30k   30.90k    67.78%
+  646513 requests in 30.00s, 90.02MB read
+  Socket errors: connect 0, read 0, write 0, timeout 482
+Requests/sec:  21550.19
+Transfer/sec:      3.00MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   566.89ms  807.18ms   2.22s    84.26%
-    Req/Sec     6.48k     4.54k   24.00k    67.07%
-  376012 requests in 30.00s, 53.07MB read
-  Socket errors: connect 0, read 0, write 0, timeout 103
-Requests/sec:  12532.99
-Transfer/sec:      1.77MB
+    Latency    53.71ms  149.54ms   1.78s    98.67%
+    Req/Sec    10.61k     2.92k   15.76k    70.68%
+  623925 requests in 30.00s, 86.87MB read
+  Socket errors: connect 0, read 0, write 0, timeout 142
+Requests/sec:  20797.20
+Transfer/sec:      2.90MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   439.31ms  649.57ms   1.80s    73.57%
-    Req/Sec     6.43k     4.28k   22.08k    65.90%
-  374894 requests in 30.00s, 52.91MB read
-  Socket errors: connect 0, read 0, write 0, timeout 235
-Requests/sec:  12496.10
-Transfer/sec:      1.76MB
+    Latency   113.53ms  344.15ms   1.98s    94.43%
+    Req/Sec    11.04k     4.96k   27.54k    69.28%
+  636620 requests in 30.00s, 88.64MB read
+  Socket errors: connect 0, read 0, write 0, timeout 124
+Requests/sec:  21220.56
+Transfer/sec:      2.95MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   563.77ms  815.67ms   1.96s    72.36%
-    Req/Sec     6.70k     4.51k   23.77k    65.08%
-  388588 requests in 30.00s, 54.85MB read
-  Socket errors: connect 0, read 0, write 0, timeout 168
-Requests/sec:  12951.40
-Transfer/sec:      1.83MB
+    Latency    37.57ms   14.50ms 781.31ms   84.39%
+    Req/Sec    10.77k     2.26k   16.98k    74.96%
+  637792 requests in 30.00s, 88.80MB read
+  Socket errors: connect 0, read 0, write 0, timeout 221
+Requests/sec:  21259.60
+Transfer/sec:      2.96MB
 -----------------------------------------------
 Running 30s test @ http://localhost:8080/deep/foo/bar/baz/100
   2 threads and 800 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   471.18ms  671.21ms   1.68s    72.48%
-    Req/Sec     6.67k     4.47k   23.17k    67.64%
-  388176 requests in 30.00s, 54.79MB read
-  Socket errors: connect 0, read 0, write 0, timeout 323
-Requests/sec:  12937.95
-Transfer/sec:      1.83MB
+    Latency   134.24ms  348.81ms   1.64s    91.87%
+    Req/Sec    11.14k     5.29k   30.82k    68.44%
+  638599 requests in 30.00s, 88.92MB read
+  Socket errors: connect 0, read 0, write 0, timeout 377
+Requests/sec:  21286.37
+Transfer/sec:      2.96MB
 =================== summary ===================
 machine:      server1
 ghc version:  7.8.4
 bench target: yesod-core-1.4.7.2
 bench:        DEEP
 bench mode:   30s * 10
-average:      12464.52
-stdev:        436.17
+average:      21279.81
+stdev:        296.15
 =================== oneline ===================
-server1,7.8.4,yesod-core-1.4.7.2,DEEP,30s,10,12464.52,436.17
+server1,7.8.4,yesod-core-1.4.7.2,DEEP,30s,10,21279.81,296.15
