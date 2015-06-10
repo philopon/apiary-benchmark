@@ -3,6 +3,7 @@
 /apiary-*
 /scotty-*
 /yesod-core-*
+/wai-routes-*
 cabal.sandbox.config
 dist
 wrk
