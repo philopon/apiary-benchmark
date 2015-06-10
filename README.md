@@ -8,15 +8,17 @@ Frameworks
 * [scotty](src/scotty.hs)
 * [Spock](src/Spock.hs)
 * [yesod](src/yesod.hs)
+* [wai-routes](src/wai-routes.hs)
 
 How to run
 ---
 ```.sh
 cabal update
 cabal sandbox init
-cabal get apiary-1.2.3 Spock-0.7.7.0 scotty-0.9.1 yesod-core-1.4.7.2
-cabal install -fapiary -fSpock -fyesod-core -fscotty --only-dependencies
-./scripts/all.sh apiary-1.2.3 Spock-0.7.7.0 scotty-0.9.1 yesod-core-1.4.7.2
+cabal get apiary-1.4.3 Spock-0.7.9.0 scotty-0.9.1 yesod-core-1.4.10 wai-routes-0.7.0
+cabal install apiary-1.4.3 Spock-0.7.9.0 scotty-0.9.1 yesod-core-1.4.10 wai-routes-0.7.0
+cabal install -fapiary -fSpock -fyesod-core -fscotty -fwai-routes --only-dependencies
+./scripts/all.sh apiary-1.2.3 Spock-0.7.7.0 scotty-0.9.1 yesod-core-1.4.7.2 wai-routes-0.7.0
 ```
 
 Benchmarks
