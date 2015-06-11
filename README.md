@@ -16,9 +16,8 @@ How to run
 cabal update
 cabal sandbox init
 cabal get apiary-1.4.3 Spock-0.7.9.0 scotty-0.9.1 yesod-core-1.4.10 wai-routes-0.7.0
-cabal install apiary-1.4.3 Spock-0.7.9.0 scotty-0.9.1 yesod-core-1.4.10 wai-routes-0.7.0
 cabal install -fapiary -fSpock -fyesod-core -fscotty -fwai-routes --only-dependencies
-./scripts/all.sh apiary-1.2.3 Spock-0.7.7.0 scotty-0.9.1 yesod-core-1.4.7.2 wai-routes-0.7.0
+./scripts/all.sh apiary-1.4.3 Spock-0.7.9.0 scotty-0.9.1 yesod-core-1.4.10 wai-routes-0.7.0
 ```
 
 Benchmarks
@@ -31,11 +30,11 @@ Benchmarks
 Machines
 ---
 
-### server1
+### tama
 
 ```.sh
 % uname -a
-Linux server1 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux
+Linux tama 3.17.8-gentoo-r1 #28 SMP Sat Mar 21 20:13:44 JST 2015 x86_64 Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz GenuineIntel GNU/Linux
 % cat /proc/cpuinfo | grep 'model name'
 model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
 model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
@@ -52,12 +51,13 @@ Results
 
 ![result](./results/1/result-server1.png)
 
-|machine  |ghc    |framework         |HELLO   |PARAM   |DEEP    |AFTER_DEEP|
-|---------|-------|------------------|--------|--------|--------|----------|
-|server1  |7.8.4  |apiary-1.3.0      |31520.82|24457.39|28788.55|32261.40  |
-|server1  |7.8.4  |Spock-0.7.7.0     |26104.94|23017.22|25273.03|27661.29  |
-|server1  |7.8.4  |yesod-core-1.4.8  |23629.91|18810.28|20557.09|22911.18  |
-|server1  |7.8.4  |scotty-0.9.1      |27098.37|16637.75|2579.80 |9164.82   |
+|machine  |ghc    |framework        |HELLO   |PARAM   |DEEP    |AFTER_DEEP|
+|---------|-------|-----------------|--------|--------|--------|----------|
+|tama     |7.8.3  |apiary-1.4.3     |34919.81|27269.06|31821.30|36002.25  |
+|tama     |7.8.3  |wai-routes-0.7.0 |38258.45|22663.17|30882.92|38904.70  |
+|tama     |7.8.3  |Spock-0.7.9.0    |27983.59|23729.49|26908.00|29449.15  |
+|tama     |7.8.3  |yesod-core-1.4.10|24744.47|21880.16|23970.68|28265.04  |
+|tama     |7.8.3  |scotty-0.9.1     |28259.78|18417.71|2630.02 |9764.79   |
 
 References
 ---
