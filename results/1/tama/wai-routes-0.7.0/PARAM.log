@@ -1,0 +1,110 @@
+Benchmarking PARAM
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    33.14ms   30.85ms   2.60s    99.69%
+    Req/Sec    11.72k     1.87k   18.96k    67.22%
+  687136 requests in 30.00s, 144.17MB read
+  Socket errors: connect 0, read 0, write 0, timeout 472
+Requests/sec:  22904.47
+Transfer/sec:      4.81MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    43.05ms  159.51ms   3.09s    99.45%
+    Req/Sec    11.63k     2.89k   22.92k    63.77%
+  668997 requests in 30.00s, 140.36MB read
+  Socket errors: connect 0, read 37, write 0, timeout 707
+Requests/sec:  22299.94
+Transfer/sec:      4.68MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.73ms   18.39ms   2.16s    99.16%
+    Req/Sec    11.52k   760.36    13.98k    81.98%
+  682231 requests in 30.00s, 143.14MB read
+  Socket errors: connect 0, read 0, write 0, timeout 56
+Requests/sec:  22741.14
+Transfer/sec:      4.77MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    69.71ms  295.14ms   2.56s    98.33%
+    Req/Sec    12.03k     3.16k   24.50k    69.15%
+  686182 requests in 30.00s, 143.97MB read
+  Socket errors: connect 0, read 0, write 0, timeout 591
+Requests/sec:  22872.46
+Transfer/sec:      4.80MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.83ms   41.79ms   3.17s    99.93%
+    Req/Sec    11.50k     1.01k   16.86k    78.18%
+  677828 requests in 30.00s, 142.21MB read
+  Socket errors: connect 0, read 0, write 0, timeout 86
+Requests/sec:  22594.41
+Transfer/sec:      4.74MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    88.51ms  420.28ms   3.66s    98.08%
+    Req/Sec    11.69k     3.68k   26.91k    59.46%
+  668700 requests in 30.00s, 140.30MB read
+  Socket errors: connect 0, read 0, write 0, timeout 541
+Requests/sec:  22289.76
+Transfer/sec:      4.68MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    35.36ms   39.62ms   3.16s    99.90%
+    Req/Sec    11.46k     0.91k   15.07k    72.75%
+  678330 requests in 30.00s, 142.32MB read
+  Socket errors: connect 0, read 0, write 0, timeout 25
+Requests/sec:  22611.10
+Transfer/sec:      4.74MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   115.15ms  430.15ms   2.44s    96.42%
+    Req/Sec    11.82k     4.61k   26.33k    62.47%
+  677587 requests in 30.00s, 142.16MB read
+  Socket errors: connect 0, read 0, write 0, timeout 447
+Requests/sec:  22585.33
+Transfer/sec:      4.74MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    35.09ms   24.51ms   2.02s    99.50%
+    Req/Sec    11.55k   721.51    15.04k    76.33%
+  684367 requests in 30.00s, 143.59MB read
+Requests/sec:  22812.35
+Transfer/sec:      4.79MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/plain/hello/12
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   442.78ms    1.07s    3.65s    90.72%
+    Req/Sec    12.13k     6.74k   31.44k    63.90%
+  686741 requests in 30.00s, 144.08MB read
+  Socket errors: connect 0, read 17, write 0, timeout 401
+Requests/sec:  22890.14
+Transfer/sec:      4.80MB
+=================== summary ===================
+machine:      tama
+ghc version:  7.8.3
+bench target: wai-routes-0.7.0
+bench:        PARAM
+bench mode:   30s * 10
+average:      22660.11
+stdev:        227.71
+=================== oneline ===================
+tama,7.8.3,wai-routes-0.7.0,PARAM,30s,10,22660.11,227.71

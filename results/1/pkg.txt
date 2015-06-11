@@ -65,7 +65,7 @@
     resourcet-1.1.5
     safe-0.3.9
     scientific-0.3.3.8
-    scotty-0.10.0
+    scotty-0.9.1
     securemem-0.1.9
     semigroups-0.16.2.2
     setenv-0.1.1.3
@@ -96,6 +96,6 @@
     warp-3.0.13.1
     web-routing-0.6.2
     word8-0.1.2
-    yesod-core-1.4.11
+    yesod-core-1.4.10
     zlib-0.6.1.1
 

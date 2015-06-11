@@ -1,0 +1,110 @@
+Benchmarking HELLO
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.77ms   24.91ms   1.58s    99.78%
+    Req/Sec    14.46k     2.95k   31.47k    67.99%
+  844016 requests in 30.00s, 125.57MB read
+  Socket errors: connect 0, read 0, write 0, timeout 357
+Requests/sec:  28133.84
+Transfer/sec:      4.19MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.62ms   20.13ms   1.85s    99.67%
+    Req/Sec    14.64k     1.62k   23.44k    76.26%
+  860636 requests in 30.00s, 128.04MB read
+  Socket errors: connect 0, read 0, write 0, timeout 91
+Requests/sec:  28687.48
+Transfer/sec:      4.27MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    29.23ms    8.65ms 985.43ms   96.58%
+    Req/Sec    13.90k     1.61k   20.54k    72.13%
+  822340 requests in 30.00s, 122.34MB read
+  Socket errors: connect 0, read 0, write 0, timeout 48
+Requests/sec:  27411.50
+Transfer/sec:      4.08MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   146.99ms  455.32ms   1.96s    93.30%
+    Req/Sec    15.53k     6.60k   41.56k    60.94%
+  880630 requests in 30.00s, 131.01MB read
+  Socket errors: connect 0, read 0, write 0, timeout 319
+Requests/sec:  29353.80
+Transfer/sec:      4.37MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.82ms    8.18ms 858.10ms   96.85%
+    Req/Sec    14.62k     1.36k   20.29k    73.97%
+  865545 requests in 30.00s, 128.77MB read
+  Socket errors: connect 0, read 0, write 0, timeout 25
+Requests/sec:  28851.68
+Transfer/sec:      4.29MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    58.84ms  277.27ms   2.49s    98.57%
+    Req/Sec    15.34k     3.74k   44.78k    73.10%
+  868909 requests in 30.00s, 129.27MB read
+  Socket errors: connect 0, read 0, write 0, timeout 444
+Requests/sec:  28963.57
+Transfer/sec:      4.31MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    26.78ms   10.09ms 959.39ms   96.85%
+    Req/Sec    15.01k     1.30k   23.40k    82.91%
+  884308 requests in 30.00s, 131.56MB read
+  Socket errors: connect 0, read 0, write 0, timeout 127
+Requests/sec:  29477.03
+Transfer/sec:      4.39MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   127.65ms  412.68ms   2.00s    94.40%
+    Req/Sec    14.27k     5.76k   44.11k    65.18%
+  809121 requests in 30.00s, 120.38MB read
+  Socket errors: connect 0, read 0, write 0, timeout 162
+Requests/sec:  26970.28
+Transfer/sec:      4.01MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.84ms   10.39ms   1.06s    98.73%
+    Req/Sec    14.60k     1.35k   19.85k    76.21%
+  863188 requests in 30.00s, 128.42MB read
+Requests/sec:  28773.08
+Transfer/sec:      4.28MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/echo/hello-world
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    69.50ms  216.10ms   1.14s    95.90%
+    Req/Sec    15.27k     6.37k   41.40k    64.08%
+  867087 requests in 30.00s, 129.00MB read
+  Socket errors: connect 0, read 0, write 0, timeout 780
+Requests/sec:  28901.85
+Transfer/sec:      4.30MB
+=================== summary ===================
+machine:      tama
+ghc version:  7.8.3
+bench target: scotty-0.9.1
+bench:        HELLO
+bench mode:   30s * 10
+average:      28552.41
+stdev:        811.37
+=================== oneline ===================
+tama,7.8.3,scotty-0.9.1,HELLO,30s,10,28552.41,811.37
